@@ -121,16 +121,14 @@ img {
   gap: 40px;
 }
 
-.menu-item {
-  position: relative;
-}
+.menu-item {}
 
 
 .nav-link {
   display: block;
   padding-top: 24px;
   padding-bottom: 24px;
-
+  position: relative;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -643,22 +641,24 @@ img {
 /* Modal section */
 
 .backdrop {
-  position: absolute;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
-
+  display: none;
   position: fixed;
   top: 0;
   left: 0;
+
   width: 100%;
   height: 100%;
- 
+
 }
 
 .modal {
+  position: absolute;
+  top: calc(50% - 204px);
+  left: calc(50% - 288px);
+
   width: 408px;
   height: 576px;
+
   background: var(--modal-bg-color);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -668,11 +668,18 @@ img {
   position: absolute;
   top: 24px;
   right: 24px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+
   width: 24px;
-height: 24px;
-border-radius: 50%;
-border: none;
-background-color: #E7E9FC;;
+  height: 24px;
+
+  border-radius: 50%;
+  border: none;
+  background-color: #E7E9FC;
 }
 
 .modal-close-icon {}
