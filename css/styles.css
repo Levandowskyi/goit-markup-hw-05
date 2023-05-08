@@ -152,8 +152,7 @@ img {
   height: 4px;
   border-radius: 2px;
   bottom: -1px;
-  background-color: #404bbf;
-}
+  }
 
 .nav-link.active::after {
   background-color: var(--customers-link-hover-border-color);
