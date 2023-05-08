@@ -155,7 +155,7 @@ img {
   }
 
 .nav-link.active::after {
-  background-color: var(--customers-link-hover-border-color);
+  background-color: var(--link-hover-focus-color);
 }
 
 .address-link {
